@@ -1,11 +1,11 @@
-
+import { Link } from 'react-router-dom'
 
 const Navbar: React.FC = () => {
   return (
     <nav className="z-20">
   <div className="h-10vh flex justify-between lg:py-5 px-10 py-10 border-b w-full">
     <div className="flex items-center flex-1">
-      <h2 className="text-6xl font-bold text-pink-500">ChatBot</h2>
+      <h2 className="text-6xl font-bold text-pink-500">Crittier</h2>
     </div>
     <div>
       <ul className="flex gap-10 mr-16 text-[18px]">
@@ -86,12 +86,9 @@ const Navbar: React.FC = () => {
                 <a href="#" className="hover:underline hover:text-pink-400">
                   Settings
                 </a>
-                <a href="#" className="hover:underline hover:text-pink-400">
+                <Link to="/customize-bot" className="hover:underline hover:text-pink-400">
                   Customize Your Bot
-                </a>
-                <a href="#" className="hover:underline hover:text-pink-400">
-                  Talk Talk
-                </a>
+                </Link>
               </div>
             </div>
                 </div>
